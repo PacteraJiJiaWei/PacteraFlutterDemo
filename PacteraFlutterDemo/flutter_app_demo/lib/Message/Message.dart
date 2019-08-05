@@ -105,40 +105,8 @@ class page2State extends State<page2> {
       appBar: new AppBar(
         title: new Text(widget.title),
       ),
-      body: Stack(
-        children: <Widget>[
-          Positioned(
-            top: top,
-            height: 400.0,
-            width: 300.0,
-            child: GestureDetector(
-              onVerticalDragStart: (details) {
-                print('拖动要开始了~===>${details}');
-                print('-----------------------');
-              },
-              onVerticalDragUpdate: (details) {
-                setState(() {
-                  top += details.delta.dy;
-                });
-              },
-              onVerticalDragEnd: (details) {
-                print('-----------------------');
-                print('拖动结束了~===>${details}');
-              },
-              child: ListView.builder(
-                physics: BouncingScrollPhysics(),
-                itemCount: 10,
-                itemBuilder: (context, index) {
-                  return Container(
-                    margin: const EdgeInsets.all(10.0),
-                    height: 100.0,
-                    color: Colors.deepOrange,
-                  );
-                },
-              ),
-            ),
-          ),
-        ],
+      body: Container(
+        color: Colors.white,
       ),
     );
   }

@@ -51,7 +51,7 @@ class MyApp extends StatelessWidget {
             nomalImg: 'images/4.png',
             selectImg: 'images/4.png',
             type: JMainTabbarItemType.nomal,
-            controller: page2('xxx'),
+            controller: page2('メッセージ'),
           ),
           JmainTabbarItemBean(
             nomalColor: Colors.white,
